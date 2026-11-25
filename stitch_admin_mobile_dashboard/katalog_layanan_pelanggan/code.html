@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#737686", "tertiary-container": "#007d55", "surface-tint": "#0053db", "on-tertiary-container": "#bdffdb", "on-background": "#111c2d", "primary-container": "#2563eb", "secondary-container": "#fd761a", "inverse-surface": "#263143", "on-tertiary-fixed": "#002113", "error-container": "#ffdad6", "surface-dim": "#cfdaf2", "error": "#ba1a1a", "outline-variant": "#c3c6d7", "inverse-on-surface": "#ecf1ff", "background": "#f9f9ff", "tertiary-fixed": "#6ffbbe", "on-tertiary-fixed-variant": "#005236", "primary": "#004ac6", "secondary-fixed": "#ffdbca", "secondary-fixed-dim": "#ffb690", "inverse-primary": "#b4c5ff", "surface-container-highest": "#d8e3fb", "surface": "#f9f9ff", "on-surface": "#111c2d", "primary-fixed": "#dbe1ff", "on-secondary-fixed-variant": "#783200", "tertiary-fixed-dim": "#4edea3", "surface-container-low": "#f0f3ff", "on-secondary-container": "#5c2400", "on-primary-fixed": "#00174b", "surface-container": "#e7eeff", "secondary": "#9d4300", "on-primary-container": "#eeefff", "on-surface-variant": "#434655", "surface-container-high": "#dee8ff", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "on-primary-fixed-variant": "#003ea8", "surface-bright": "#f9f9ff", "on-secondary": "#ffffff", "primary-fixed-dim": "#b4c5ff", "tertiary": "#006242", "on-error": "#ffffff", "on-secondary-fixed": "#341100", "on-primary": "#ffffff", "surface-variant": "#d8e3fb", "on-tertiary": "#ffffff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1.25rem", "margin": "1.25rem", "space-sm": "0.5rem", "space-xl": "1.75rem", "space-md": "0.875rem", "gutter": "1rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-sm": ["17px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "700" }], "headline-xl-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "18px", "fontWeight": "600" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "500" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="FreshWash Admin Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuKZusOcmpGLCmGNN-EDRWZ9ZzVVWkvrpWmFBT-H421alwgwYR0Gb2nyx_DOjMeH27Wko-h3JIkRleALztiVWdjSo3-iMiLkzmV2j-PoGPop49S0J1jt1hWJMPbCROJ1zW-CLvt0qa4SzsvCr5Oi6Cj2HnqarihzjbLm7ZpBPh4kQL0mZvdmw1m3yT340SyDcQ3AhKDaDPdMAs7MYyQ27XEQHm4duzMJGg2C8hYWg"/><div class="flex flex-col min-w-0"><span class="text-label-sm font-label-sm text-primary uppercase tracking-wider truncate">FreshWash Admin</span><h1 class="text-headline-sm font-headline-sm text-on-surface truncate">Pelanggan &amp; Katalog</h1></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><button aria-label="Notifications" class="w-11 h-11 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbhwpdo7VnywW2bG9W-EcLaHbahPBiovzAA3FKqcOLVLUucXsENsRvymxX0L5fBrCsl0so-oIbTrJlvC5Z6w7En6spqmnCHfZSfbIoP7wOiZErMxJ41BffW2KA1mTnl4a_zpA_X1N2D2yz5GCP6FTbyrlBWG5Dwp5ugpLyJjcSZHYe8hQLobJ1JJIlKvZ0tOmUYBFFc298QuVhM5mHxZ8npeMNLCE0re--NsDLZzw"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-background"><div class="flex flex-col w-full pb-8">
+<!-- Interactive View Toggle & Top Subheader -->
+<div class="px-margin pt-space-md flex flex-col gap-space-md">
+<!-- Segmented Capsule Pill Switcher Inspired by Inspiration Archetype -->
+<div class="bg-surface-container-low p-1.5 rounded-full flex items-center shadow-sm">
+<button class="flex-1 py-2.5 px-3 rounded-full text-label-md font-label-md transition-all duration-300 flex items-center justify-center gap-1.5 bg-primary text-on-primary shadow-[0_4px_12px_rgba(0,74,198,0.2)]" id="tab-katalog" onclick="switchMainTab('katalog')">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+<span>Katalog &amp; Tarif</span>
+</button>
+<button class="flex-1 py-2.5 px-3 rounded-full text-label-md font-label-md transition-all duration-300 flex items-center justify-center gap-1.5 text-on-surface-variant hover:text-primary" id="tab-pelanggan" onclick="switchMainTab('pelanggan')">
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span>Database Pelanggan</span>
+</button>
+</div>
+<!-- Quick Action / Add Service Button -->
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="h-2.5 w-2.5 rounded-full bg-tertiary-container animate-pulse"></span>
+<span class="text-label-sm font-label-sm text-tertiary-container uppercase tracking-wider">Katalog Terbit Live</span>
+</div>
+<button class="flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md shadow-[0_6px_16px_rgba(253,118,26,0.25)] active:scale-95 transition-all" onclick="triggerModalAdd()">
+<span class="material-symbols-outlined text-[18px] text-white">add_circle</span>
+<span class="text-white font-bold tracking-tight">+ Tambah Layanan</span>
+</button>
+</div>
+</div>
+<!-- SECTION 1: KATALOG LAYANAN (Default Active) -->
+<section class="flex flex-col gap-space-lg mt-space-md" id="view-katalog">
+<!-- Horizontal Filter Chips (Capsule scroller with counter badges) -->
+<div class="flex items-center gap-space-xs overflow-x-auto px-margin scrollbar-none py-1">
+<button class="category-chip flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-full bg-secondary-container text-white text-label-md font-label-md shadow-sm transition-all" onclick="filterCategory('all', this)">
+<span>Semua Layanan</span>
+<span class="w-5 h-5 rounded-full bg-white/20 text-white text-label-sm font-label-sm flex items-center justify-center">18</span>
+</button>
+<button class="category-chip flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:text-primary text-label-md font-label-md transition-all" onclick="filterCategory('kiloan', this)">
+<span>Layanan Kiloan</span>
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface-variant text-label-sm font-label-sm flex items-center justify-center">6</span>
+</button>
+<button class="category-chip flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:text-primary text-label-md font-label-md transition-all" onclick="filterCategory('satuan', this)">
+<span>Layanan Satuan Eksklusif</span>
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface-variant text-label-sm font-label-sm flex items-center justify-center">5</span>
+</button>
+<button class="category-chip flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:text-primary text-label-md font-label-md transition-all" onclick="filterCategory('khusus', this)">
+<span>Perawatan Khusus</span>
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface-variant text-label-sm font-label-sm flex items-center justify-center">4</span>
+</button>
+<button class="category-chip flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:text-primary text-label-md font-label-md transition-all" onclick="filterCategory('langganan', this)">
+<span>Paket Langganan</span>
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface-variant text-label-sm font-label-sm flex items-center justify-center">3</span>
+</button>
+</div>
+<!-- Service Items List -->
+<div class="px-margin flex flex-col gap-space-md" id="services-container">
+<!-- Card 1: Cuci Kering Setrika Reguler -->
+<div class="service-card kiloan bg-surface-container-lowest p-space-md rounded-[1.5rem] shadow-[0_8px_24px_-4px_rgba(15,23,42,0.04),0_2px_6px_-1px_rgba(15,23,42,0.02)] flex flex-col gap-space-sm relative overflow-hidden transition-all hover:shadow-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">water_voc</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<h2 class="text-body-lg font-bold text-on-surface truncate">Cuci Kering Setrika Reguler</h2>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Layanan Kiloan Harian • Higienis 3x Bilas</p>
+</div>
+</div>
+<!-- Status Toggle Switch -->
+<div class="flex items-center gap-1.5 flex-shrink-0">
+<span class="text-label-sm font-label-sm text-tertiary-container font-semibold">Aktif</span>
+<button aria-label="Toggle status" class="w-11 h-6 rounded-full bg-tertiary-container p-0.5 flex items-center justify-end transition-colors shadow-inner" onclick="toggleSwitch(this)">
+<div class="w-5 h-5 rounded-full bg-surface-container-lowest shadow-md transform transition-transform"></div>
+</button>
+</div>
+</div>
+<!-- Tariff & Spec Pills -->
+<div class="mt-1 pt-space-xs grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-low p-3 rounded-2xl flex flex-col justify-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Tarif Resmi</span>
+<div class="flex items-baseline gap-1">
+<span class="text-headline-sm font-headline-sm text-primary">Rp 8.000</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">/Kg</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-2xl flex flex-col justify-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Estimasi Pengerjaan</span>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-tertiary">schedule</span>
+<span class="text-body-md font-bold">2 Hari</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm text-outline">
+<span class="material-symbols-outlined text-[16px]">local_laundry_service</span>
+<span>Minimal order: 3 Kg</span>
+</div>
+<button class="text-label-md font-label-md text-primary hover:underline flex items-center gap-0.5">
+<span>Ubah Tarif</span>
+<span class="material-symbols-outlined text-[14px]">edit</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Cuci Kering Setrika Express (Hero Warm Aesthetic from Mockup) -->
+<div class="service-card kiloan bg-surface-container-lowest p-space-md rounded-[1.5rem] shadow-[0_8px_24px_-4px_rgba(15,23,42,0.04),0_2px_6px_-1px_rgba(15,23,42,0.02)] flex flex-col gap-space-sm relative overflow-hidden transition-all hover:shadow-md">
+<!-- Express badge ribbon -->
+<div class="absolute top-0 right-0">
+<div class="bg-secondary-fixed text-on-secondary-fixed-variant px-3 py-1 rounded-bl-2xl text-label-sm font-label-sm font-extrabold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>PRIORITAS</span>
+</div>
+</div>
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-secondary-fixed/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">flash_on</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="text-body-lg font-bold text-on-surface truncate">Cuci Kering Setrika Express</h2>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Layanan Cepat Kilat • Slot Mesin Khusus</p>
+</div>
+</div>
+<!-- Status Toggle -->
+<div class="flex items-center gap-1.5 flex-shrink-0 pt-6">
+<span class="text-label-sm font-label-sm text-tertiary-container font-semibold">Aktif</span>
+<button aria-label="Toggle status" class="w-11 h-6 rounded-full bg-tertiary-container p-0.5 flex items-center justify-end transition-colors shadow-inner" onclick="toggleSwitch(this)">
+<div class="w-5 h-5 rounded-full bg-surface-container-lowest shadow-md transform transition-transform"></div>
+</button>
+</div>
+</div>
+<div class="mt-1 pt-space-xs grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-low p-3 rounded-2xl flex flex-col justify-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Tarif Kilat</span>
+<div class="flex items-baseline gap-1">
+<span class="text-headline-sm font-headline-sm text-secondary">Rp 14.000</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">/Kg</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-2xl flex flex-col justify-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Selesai Dalam</span>
+<div class="flex items-center gap-1.5 text-secondary font-bold">
+<span class="material-symbols-outlined text-[16px]">speed</span>
+<span class="text-body-md">4 Jam Siap</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm text-outline">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Termasuk Parfum Premium Microcapsule</span>
+</div>
+<button class="text-label-md font-label-md text-secondary hover:underline flex items-center gap-0.5">
+<span>Ubah Kuota</span>
+<span class="material-symbols-outlined text-[14px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Jas / Blazer 2 Pcs (Satuan Eksklusif) with visual image preview -->
+<div class="service-card satuan bg-surface-container-lowest p-space-md rounded-[1.5rem] shadow-[0_8px_24px_-4px_rgba(15,23,42,0.04),0_2px_6px_-1px_rgba(15,23,42,0.02)] flex flex-col gap-space-sm relative overflow-hidden transition-all hover:shadow-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-2xl object-cover shadow-sm" data-alt="A luxurious neatly pressed navy blue suit jacket on a wooden hanger inside a minimalist dry clean boutique atelier with warm ambient daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9sykGQuxagusFM6DiH-9xKTqVHUq2zHR0KpvLYeffPRrfjJ0k7ZmfcpRbp34Erxg3umVxRtgyZonQrTJzQkaWSOkrj0psmq70toZ2jbLG8bTDOFOZU1L0R3-iDTHTUcpgRt_gu89BLnRarbzdGG7ZaX8dG1jaFEImZuZ7DHhXSQO8VgA5kJyW279IkmkKOHgIJAyFZoE_2VU68hDYXbkfwCmPhfpxTVsPkrsqJ4k"/>
+<div class="flex flex-col min-w-0">
+<h2 class="text-body-lg font-bold text-on-surface truncate">Jas / Blazer (2 Pcs)</h2>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed text-label-sm font-label-sm font-bold">Dry Clean Uap</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">• Gantungan Khusus</span>
+</div>
+</div>
+</div>
+<!-- Status Toggle -->
+<div class="flex items-center gap-1.5 flex-shrink-0">
+<span class="text-label-sm font-label-sm text-tertiary-container font-semibold">Aktif</span>
+<button aria-label="Toggle status" class="w-11 h-6 rounded-full bg-tertiary-container p-0.5 flex items-center justify-end transition-colors shadow-inner" onclick="toggleSwitch(this)">
+<div class="w-5 h-5 rounded-full bg-surface-container-lowest shadow-md transform transition-transform"></div>
+</button>
+</div>
+</div>
+<div class="mt-1 pt-space-xs grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-low p-3 rounded-2xl flex flex-col justify-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Tarif Satuan</span>
+<div class="flex items-baseline gap-1">
+<span class="text-headline-sm font-headline-sm text-primary">Rp 35.000</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">/Set</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-2xl flex flex-col justify-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Proteksi Bahan</span>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">verified</span>
+<span class="text-body-md font-bold">Garansi Bahan</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="text-label-sm font-label-sm text-outline">Cover dust bag non-woven gratis</span>
+<button class="text-label-md font-label-md text-primary hover:underline flex items-center gap-0.5">
+<span>Detail SOP</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 4: Paket Kost Hemat 30 Kg (Paket Langganan Bulanan) -->
+<div class="service-card langganan bg-surface-container-lowest p-space-md rounded-[1.5rem] shadow-[0_8px_24px_-4px_rgba(15,23,42,0.04),0_2px_6px_-1px_rgba(15,23,42,0.02)] flex flex-col gap-space-sm relative overflow-hidden transition-all hover:shadow-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-tertiary-container/10 flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined text-[26px]">loyalty</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<h2 class="text-body-lg font-bold text-on-surface truncate">Paket Kost Hemat 30 Kg</h2>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container text-label-sm font-label-sm font-extrabold animate-pulse">Hemat 15%</span>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Berlaku 30 Hari • Free Antar Jemput Kost</p>
+</div>
+</div>
+<!-- Status Toggle -->
+<div class="flex items-center gap-1.5 flex-shrink-0">
+<span class="text-label-sm font-label-sm text-tertiary-container font-semibold">Aktif</span>
+<button aria-label="Toggle status" class="w-11 h-6 rounded-full bg-tertiary-container p-0.5 flex items-center justify-end transition-colors shadow-inner" onclick="toggleSwitch(this)">
+<div class="w-5 h-5 rounded-full bg-surface-container-lowest shadow-md transform transition-transform"></div>
+</button>
+</div>
+</div>
+<div class="mt-1 pt-space-xs grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-low p-3 rounded-2xl flex flex-col justify-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Biaya Langganan</span>
+<div class="flex items-baseline gap-1">
+<span class="text-headline-sm font-headline-sm text-tertiary-container">Rp 210.000</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">/Bulan</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-2xl flex flex-col justify-center">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Status Penjualan</span>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">campaign</span>
+<span class="text-body-md font-bold text-tertiary-container">Promo Aktif</span>
+</div>
+</div>
+</div>
+<!-- Progress quota consumed indicator inspired by nutritional chart archetype -->
+<div class="mt-1 bg-surface-container-low p-3 rounded-2xl flex flex-col gap-1.5">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="text-on-surface-variant font-medium">Kapasitas Pelanggan Terdaftar</span>
+<span class="text-primary font-bold">48 / 60 Kuota</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 80%"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: DATABASE PELANGGAN (Hidden initially, toggled via JS) -->
+<section class="hidden flex flex-col gap-space-md mt-space-md px-margin" id="view-pelanggan">
+<!-- Search Bar for Customers -->
+<div class="flex items-center gap-2 bg-surface-container-lowest px-4 py-3 rounded-2xl shadow-sm">
+<span class="material-symbols-outlined text-outline text-[20px]">search</span>
+<input class="bg-transparent text-body-md text-on-surface placeholder:text-outline focus:outline-none w-full" placeholder="Cari nama, WhatsApp, atau ID pelanggan..." type="text"/>
+<button class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+<!-- Pelanggan List Preview Items -->
+<div class="flex flex-col gap-3">
+<!-- Customer 1: Ibu Ratna Kumala (Top Customer) -->
+<div class="bg-surface-container-lowest p-space-md rounded-[1.5rem] shadow-sm flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="Portrait of an elegant Indonesian middle-aged woman customer with bright warm smile and neat hair wearing modest light pastel scarf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3IvWLAO7JEB0S3NKGQCNlNTS1PoPMi_6UQyeAs2NZCwBm3Bm4MS2iMPuBBkQjp0u_vupGHqkvnhxJpbbFttdG84fuRzYJemzm01p6MS6WM6SBoKV6PeG_z6E9DnJsAlGQ8OUm6KmgkFzb5C3_xQBmr2GunSbSvs8UzZHd-nq-a5_ZVtygKvgUIIV3XWFRszr996qtCr2TMeqoJ_HfVUCRDSlsQ_vg1a2wEjRqCFc"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 bg-secondary-container rounded-full text-white flex items-center justify-center text-[10px] font-bold shadow-sm">
+              ★
+            </div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="text-body-lg font-bold text-on-surface truncate">Ibu Ratna Kumala</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant text-label-sm font-label-sm font-extrabold">VIP</span>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant truncate">0812-8829-1029 • Kebayoran Baru</p>
+<div class="flex items-center gap-3 mt-1 text-label-sm font-label-sm">
+<span class="text-primary font-bold">18x Transaksi</span>
+<span class="text-outline">•</span>
+<span class="text-tertiary-container font-semibold">Total 72 Kg</span>
+</div>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary hover:bg-primary-fixed transition-colors flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+<!-- Customer 2: Dimas Arya -->
+<div class="bg-surface-container-lowest p-space-md rounded-[1.5rem] shadow-sm flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<img class="w-12 h-12 rounded-full object-cover flex-shrink-0" data-alt="Friendly young Indonesian male university student in modern casual denim shirt smiling outdoor campus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCALdOzeHTlgDPDMPvwmUbFKkgRliAabY2W7TPUm7LlTlRGKd8zY3UdZRJutfZ_t8a3ruyewOJX_h09PG2Ov5suutsG-P2hZyuq7HGqBkmMvNZlV7Gii8mzttWsKuYLUfFxsVUuSUg296hGg1cnrE9b30jMWHtQYweHUhCCKaR2gHw4KNPm10sxpmigDao6op3_90MxS0Ri9gtkTbNKQvw_mgUqsjXpgUajFBZHt-U"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="text-body-lg font-bold text-on-surface truncate">Dimas Arya</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant text-label-sm font-label-sm font-semibold">Paket Kost</span>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant truncate">0857-1923-4411 • Tebet Barat</p>
+<div class="flex items-center gap-3 mt-1 text-label-sm font-label-sm">
+<span class="text-primary font-bold">4x Transaksi</span>
+<span class="text-outline">•</span>
+<span class="text-tertiary-container font-semibold">Sisa 12 Kg</span>
+</div>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary hover:bg-primary-fixed transition-colors flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+<!-- Customer 3: Maria Silviana -->
+<div class="bg-surface-container-lowest p-space-md rounded-[1.5rem] shadow-sm flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<img class="w-12 h-12 rounded-full object-cover flex-shrink-0" data-alt="Modern professional woman with glasses and confident gentle look against soft interior clean studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGx_d-ffVn95rYYafptZCSokfOzGk8_8NKdqM3OS64azOlT8Q85fdshdNZuKZI7MpQbNOzn0IsHiHBI_FOwkg50hG7LHqgunGdo0p5q4u4ZlFl68BSWyCYrOvHqwRpmui1UMb8JoOwDbqU5VqcfYD54HolHvZDVlgNvvY2a9tyq2cQ7rrBlt02UzGXQbGIM5oLSyUj81kAEei8FqufHUaPaqgR1Fi_RW9KsIZ5Elc"/>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="text-body-lg font-bold text-on-surface truncate">Maria Silviana</h3>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed text-label-sm font-label-sm font-bold">Dry Clean</span>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant truncate">0818-0922-8172 • Kuningan City</p>
+<div class="flex items-center gap-3 mt-1 text-label-sm font-label-sm">
+<span class="text-primary font-bold">7x Transaksi</span>
+<span class="text-outline">•</span>
+<span class="text-tertiary-container font-semibold">Rp 580.000</span>
+</div>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary hover:bg-primary-fixed transition-colors flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- SECTION 3: QUICK CUSTOMER INSIGHT CARD (Inspired by the archetype's Water Remainder & Daily Allowance Bento Cards) -->
+<div class="px-margin mt-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">insights</span>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Insight Pelanggan &amp; Loyalty</h2>
+</div>
+<span class="text-label-sm font-label-sm text-primary font-bold">Bulan Ini</span>
+</div>
+<!-- Bento Style Highlight Card with Soft Tint Gradient -->
+<div class="bg-gradient-to-br from-surface-container-high/90 via-surface-container-low to-surface-container-highest p-space-md rounded-[1.75rem] shadow-[0_8px_24px_-4px_rgba(37,99,235,0.08)] flex flex-col gap-space-md relative overflow-hidden">
+<!-- Decorative Droplet / Bubble Water Glow Accent -->
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-primary/10 blur-xl pointer-events-none"></div>
+<!-- Top Row: Radial Ring Metric & Total Pelanggan -->
+<div class="flex items-center justify-between gap-space-md relative z-10">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 text-primary mb-1">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider font-extrabold">Total Terdaftar</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="text-headline-xl-mobile font-headline-xl-mobile text-on-surface tracking-tight">428</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant font-medium">Orang</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<p class="text-label-sm font-label-sm text-tertiary-container font-bold">312 Member Aktif (73%)</p>
+</div>
+</div>
+<!-- Radial Gauge Chart SVG (Archetype replication) -->
+<div class="relative w-20 h-20 flex-shrink-0 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 72 72">
+<!-- Background Track -->
+<circle class="text-surface-container-highest" cx="36" cy="36" fill="none" r="30" stroke="currentColor" stroke-width="7"></circle>
+<!-- Progress Fill (73%) -->
+<circle class="text-primary" cx="36" cy="36" fill="none" r="30" stroke="currentColor" stroke-dasharray="188.5" stroke-dashoffset="50.9" stroke-linecap="round" stroke-width="7"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-[20px] text-primary">groups</span>
+<span class="text-label-sm font-bold text-on-surface text-[10px]">73%</span>
+</div>
+</div>
+</div>
+<!-- Bottom Highlight Banner: Top Pelanggan Bulan Ini -->
+<div class="bg-surface-container-lowest/90 backdrop-blur-md p-space-sm rounded-2xl flex items-center gap-3 relative z-10 shadow-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary font-bold flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">military_tech</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-secondary font-extrabold uppercase tracking-wide">Top Pelanggan Bulan Ini</span>
+<span class="text-label-sm font-label-sm text-outline">72 Kg Total</span>
+</div>
+<span class="text-body-md font-bold text-on-surface truncate">Ibu Ratna Kumala</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">18x Transaksi Selesai • 100% On-Time Pickup</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 4: ACTIONS (Kelola Diskon & Kode Promo, Export Laporan Pelanggan) -->
+<div class="px-margin mt-space-lg flex flex-col gap-space-sm">
+<div class="text-label-sm font-label-sm text-outline uppercase tracking-wider font-semibold">Tindakan Cepat &amp; Ekspor</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Promo & Discount Button Card -->
+<button class="bg-surface-container-lowest p-space-md rounded-[1.5rem] shadow-sm flex flex-col items-start justify-between gap-3 text-left hover:shadow-md transition-all active:scale-[0.98]" onclick="openPromoModal()">
+<div class="w-10 h-10 rounded-2xl bg-secondary-fixed/60 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">confirmation_number</span>
+</div>
+<div class="flex flex-col">
+<span class="text-body-md font-bold text-on-surface">Kelola Diskon &amp; Promo</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant mt-0.5">3 Kupon Aktif</span>
+</div>
+</button>
+<!-- Export Report Button Card -->
+<button class="bg-surface-container-lowest p-space-md rounded-[1.5rem] shadow-sm flex flex-col items-start justify-between gap-3 text-left hover:shadow-md transition-all active:scale-[0.98]" onclick="triggerExportNotice()">
+<div class="w-10 h-10 rounded-2xl bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">sim_card_download</span>
+</div>
+<div class="flex flex-col">
+<span class="text-body-md font-bold text-on-surface">Export Pelanggan</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant mt-0.5">Format .CSV / Excel</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Toast Notification Overlay for Interactions -->
+<div class="fixed bottom-20 left-1/2 transform -translate-x-1/2 bg-inverse-surface text-inverse-on-surface px-5 py-3 rounded-full text-label-md font-label-md flex items-center gap-2 shadow-xl opacity-0 pointer-events-none transition-all duration-300 z-50" id="toast-notification">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed" id="toast-icon">check_circle</span>
+<span id="toast-text">Laporan berhasil disiapkan!</span>
+</div>
+</div>
+<script>
+  function switchMainTab(target) {
+    const tabKatalog = document.getElementById('tab-katalog');
+    const tabPelanggan = document.getElementById('tab-pelanggan');
+    const viewKatalog = document.getElementById('view-katalog');
+    const viewPelanggan = document.getElementById('view-pelanggan');
+
+    if (target === 'katalog') {
+      tabKatalog.className = 'flex-1 py-2.5 px-3 rounded-full text-label-md font-label-md transition-all duration-300 flex items-center justify-center gap-1.5 bg-primary text-on-primary shadow-[0_4px_12px_rgba(0,74,198,0.2)]';
+      tabPelanggan.className = 'flex-1 py-2.5 px-3 rounded-full text-label-md font-label-md transition-all duration-300 flex items-center justify-center gap-1.5 text-on-surface-variant hover:text-primary';
+      viewKatalog.classList.remove('hidden');
+      viewPelanggan.classList.add('hidden');
+    } else {
+      tabPelanggan.className = 'flex-1 py-2.5 px-3 rounded-full text-label-md font-label-md transition-all duration-300 flex items-center justify-center gap-1.5 bg-primary text-on-primary shadow-[0_4px_12px_rgba(0,74,198,0.2)]';
+      tabKatalog.className = 'flex-1 py-2.5 px-3 rounded-full text-label-md font-label-md transition-all duration-300 flex items-center justify-center gap-1.5 text-on-surface-variant hover:text-primary';
+      viewKatalog.classList.add('hidden');
+      viewPelanggan.classList.remove('hidden');
+    }
+  }
+
+  function filterCategory(cat, element) {
+    const chips = document.querySelectorAll('.category-chip');
+    chips.forEach(chip => {
+      chip.className = 'category-chip flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-low text-on-surface-variant hover:text-primary text-label-md font-label-md transition-all';
+    });
+    element.className = 'category-chip flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-full bg-secondary-container text-white text-label-md font-label-md shadow-sm transition-all';
+
+    const cards = document.querySelectorAll('.service-card');
+    cards.forEach(card => {
+      if (cat === 'all' || card.classList.contains(cat)) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function toggleSwitch(btn) {
+    const isOff = btn.classList.contains('justify-start');
+    const label = btn.previousElementSibling;
+    if (isOff) {
+      btn.classList.remove('justify-start', 'bg-outline-variant');
+      btn.classList.add('justify-end', 'bg-tertiary-container');
+      if (label) {
+        label.textContent = 'Aktif';
+        label.classList.remove('text-outline');
+        label.classList.add('text-tertiary-container');
+      }
+      showToast('Status layanan diubah menjadi Aktif');
+    } else {
+      btn.classList.remove('justify-end', 'bg-tertiary-container');
+      btn.classList.add('justify-start', 'bg-outline-variant');
+      if (label) {
+        label.textContent = 'Non-Aktif';
+        label.classList.remove('text-tertiary-container');
+        label.classList.add('text-outline');
+      }
+      showToast('Layanan dinonaktifkan sementara');
+    }
+  }
+
+  function triggerModalAdd() {
+    showToast('Form Layanan Baru dibuka');
+  }
+
+  function openPromoModal() {
+    showToast('Membuka Manajemen Kupon Diskon');
+  }
+
+  function triggerExportNotice() {
+    showToast('Mengunduh CSV Data Pelanggan 428 Kontak...');
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById('toast-notification');
+    const text = document.getElementById('toast-text');
+    text.textContent = message;
+    toast.classList.remove('opacity-0', 'pointer-events-none');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0', 'pointer-events-none');
+    }, 2500);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.05)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="text-label-sm font-label-sm mt-0.5 truncate">Dashboard</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="pesanan" href="#"><span class="material-symbols-outlined text-[22px]">local_laundry_service</span><span class="text-label-sm font-label-sm mt-0.5 truncate">Pesanan</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors group" data-path="pos-baru" href="#"><div class="w-10 h-10 -mt-5 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-[0_8px_16px_-4px_rgba(37,99,235,0.4)] group-hover:bg-primary transition-all"><span class="material-symbols-outlined text-[22px]">point_of_sale</span></div><span class="text-label-sm font-label-sm mt-1 truncate">POS Baru</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="mesin-operasional" href="#"><span class="material-symbols-outlined text-[22px]">precision_manufacturing</span><span class="text-label-sm font-label-sm mt-0.5 truncate">Mesin</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="pelanggan-katalog" href="#"><span class="material-symbols-outlined text-[22px]">group</span><span class="text-label-sm font-label-sm mt-0.5 truncate">Katalog</span></a></div></nav></body></html>

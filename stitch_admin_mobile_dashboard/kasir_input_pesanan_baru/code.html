@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline": "#737686", "tertiary-container": "#007d55", "surface-tint": "#0053db", "on-tertiary-container": "#bdffdb", "on-background": "#111c2d", "primary-container": "#2563eb", "secondary-container": "#fd761a", "inverse-surface": "#263143", "on-tertiary-fixed": "#002113", "error-container": "#ffdad6", "surface-dim": "#cfdaf2", "error": "#ba1a1a", "outline-variant": "#c3c6d7", "inverse-on-surface": "#ecf1ff", "background": "#f9f9ff", "tertiary-fixed": "#6ffbbe", "on-tertiary-fixed-variant": "#005236", "primary": "#004ac6", "secondary-fixed": "#ffdbca", "secondary-fixed-dim": "#ffb690", "inverse-primary": "#b4c5ff", "surface-container-highest": "#d8e3fb", "surface": "#f9f9ff", "on-surface": "#111c2d", "primary-fixed": "#dbe1ff", "on-secondary-fixed-variant": "#783200", "tertiary-fixed-dim": "#4edea3", "surface-container-low": "#f0f3ff", "on-secondary-container": "#5c2400", "on-primary-fixed": "#00174b", "surface-container": "#e7eeff", "secondary": "#9d4300", "on-primary-container": "#eeefff", "on-surface-variant": "#434655", "surface-container-high": "#dee8ff", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "on-primary-fixed-variant": "#003ea8", "surface-bright": "#f9f9ff", "on-secondary": "#ffffff", "primary-fixed-dim": "#b4c5ff", "tertiary": "#006242", "on-error": "#ffffff", "on-secondary-fixed": "#341100", "on-primary": "#ffffff", "surface-variant": "#d8e3fb", "on-tertiary": "#ffffff" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1.25rem", "margin": "1.25rem", "space-sm": "0.5rem", "space-xl": "1.75rem", "space-md": "0.875rem", "gutter": "1rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-sm": ["17px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "700" }], "headline-xl-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "18px", "fontWeight": "600" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "500" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-background font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="FreshWash Admin Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuKZusOcmpGLCmGNN-EDRWZ9ZzVVWkvrpWmFBT-H421alwgwYR0Gb2nyx_DOjMeH27Wko-h3JIkRleALztiVWdjSo3-iMiLkzmV2j-PoGPop49S0J1jt1hWJMPbCROJ1zW-CLvt0qa4SzsvCr5Oi6Cj2HnqarihzjbLm7ZpBPh4kQL0mZvdmw1m3yT340SyDcQ3AhKDaDPdMAs7MYyQ27XEQHm4duzMJGg2C8hYWg"/><div class="flex flex-col min-w-0"><span class="text-label-sm font-label-sm text-primary uppercase tracking-wider truncate">FreshWash Admin</span><h1 class="text-headline-sm font-headline-sm text-on-surface truncate">Pos Baru</h1></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><button aria-label="Notifications" class="w-11 h-11 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbhwpdo7VnywW2bG9W-EcLaHbahPBiovzAA3FKqcOLVLUucXsENsRvymxX0L5fBrCsl0so-oIbTrJlvC5Z6w7En6spqmnCHfZSfbIoP7wOiZErMxJ41BffW2KA1mTnl4a_zpA_X1N2D2yz5GCP6FTbyrlBWG5Dwp5ugpLyJjcSZHYe8hQLobJ1JJIlKvZ0tOmUYBFFc298QuVhM5mHxZ8npeMNLCE0re--NsDLZzw"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-background"><div class="flex flex-col w-full pb-8">
+<!-- Interactive Step Progress & Status Pill -->
+<div class="px-margin pt-2 pb-4">
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,23,42,0.05)]">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary-container text-on-primary-container text-label-sm font-label-sm">
+            1
+          </span>
+<span class="text-label-lg font-label-lg text-on-surface">Langkah 1 dari 3</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm tracking-wide">
+          Input Kasir POS
+        </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-2.5">Pilih Pelanggan, Layanan &amp; Penimbangan</p>
+<!-- Progress Bar Tracker -->
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden flex gap-1">
+<div class="bg-primary-container h-full w-1/3 rounded-full"></div>
+<div class="bg-surface-variant h-full w-1/3 rounded-full"></div>
+<div class="bg-surface-variant h-full w-1/3 rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Section 1: Customer Selection & Member Preview -->
+<div class="px-margin mb-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="text-label-lg font-label-lg text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">person</span>
+        Data Pelanggan
+      </h2>
+<button aria-label="Ganti Pelanggan" class="text-label-sm font-label-sm text-primary flex items-center gap-0.5 hover:underline">
+<span>Ganti Akun</span>
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+</button>
+</div>
+<!-- Quick Search Input & Add Button -->
+<div class="flex items-center gap-space-sm">
+<div class="flex-1 relative flex items-center bg-surface-container-lowest rounded-xl shadow-[0_2px_10px_rgba(15,23,42,0.03)] px-3.5 py-2.5">
+<span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span>
+<input class="w-full bg-transparent text-body-md font-body-md text-on-surface focus:outline-none placeholder:text-outline" placeholder="Cari Pelanggan Lama (Nama / No. HP)..." type="text" value="Bpk. Rizky Pratama"/>
+<button aria-label="Hapus Pencarian" class="text-outline hover:text-on-surface p-0.5">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+<button aria-label="Tambah Pelanggan Baru" class="h-11 px-3.5 bg-surface-container-high text-primary hover:bg-primary-fixed font-label-md text-label-md rounded-xl flex items-center gap-1 transition-colors flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span class="hidden sm:inline">Pelanggan Baru</span>
+</button>
+</div>
+<!-- Selected Customer Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_4px_20px_-2px_rgba(15,23,42,0.04)] relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 bg-primary-fixed/40 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm ring-2 ring-primary/20" data-alt="Close up profile photo of a modern friendly smiling Indonesian gentleman wearing a casual neat collared shirt against a clean minimal studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO6cYF6wa-WJqgUhMPkA2EdJGMPQ-X2pbfdP0rYwGgBgJoN5VluBdZW-UtRsQXzVCCZVo5Z0dy_mT0Sixy9OkP7JzDL5TwJLrGbygjkfO_d3ynu6DGEOA2-onjnoiiUzma_Yb9sJSZ3Y2-Tgg63-lWKFU6YjnRcn3fSt98EIbYINNYnKSuxwBFYFa9I3VFUVSj5N-AKASG76F2CUqWbXHh3APPlSpRAJZTXbd9oqo"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-secondary-container text-on-primary text-[10px] flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[12px]">workspace_premium</span>
+</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5 flex-wrap">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Bpk. Rizky Pratama</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant text-label-sm font-label-sm">
+                Member Gold
+              </span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">call</span>
+              0812-3456-7890
+            </p>
+</div>
+</div>
+</div>
+<!-- Point Counter & Loyalty Benefit Tag -->
+<div class="mt-space-md pt-3 bg-surface-container-low/70 rounded-xl p-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">stars</span>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Saldo Loyalitas</p>
+<p class="text-label-lg font-label-lg text-tertiary">120 Poin FreshWash</p>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-block px-2 py-0.5 rounded-md bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-bold">
+            Diskon 10% Aktif
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 2: Layanan & Paket Selection -->
+<div class="px-margin mb-space-lg">
+<div class="flex items-center justify-between mb-space-sm">
+<h2 class="text-label-lg font-label-lg text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">dry_cleaning</span>
+        Pilihan Layanan &amp; Paket
+      </h2>
+<span class="text-label-sm font-label-sm text-outline">Pilih 1 Paket Utama</span>
+</div>
+<!-- 2-Column Grid Layout for Service Catalog -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Option 1: Selected (Cuci Kering Setrika Kiloan) -->
+<div class="relative bg-primary-fixed/20 p-space-md rounded-2xl flex flex-col justify-between shadow-[0_8px_20px_-4px_rgba(37,99,235,0.15)] ring-2 ring-primary">
+<div class="flex items-start justify-between mb-2">
+<div class="w-9 h-9 rounded-xl bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">local_laundry_service</span>
+</div>
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+</div>
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface leading-snug">Cuci Kering Setrika</h4>
+<span class="text-label-sm font-label-sm text-primary font-bold">Kiloan Lengkap</span>
+<div class="mt-2 pt-2 bg-primary/10 rounded-lg px-2 py-1 flex items-baseline justify-between">
+<span class="text-label-sm font-label-sm text-primary">Rp 8.000</span>
+<span class="text-[11px] text-on-surface-variant">/kg</span>
+</div>
+</div>
+</div>
+<!-- Option 2: Cuci Kering Lipat -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl flex flex-col justify-between shadow-[0_2px_12px_rgba(15,23,42,0.03)] hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-start justify-between mb-2">
+<div class="w-9 h-9 rounded-xl bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">inventory_2</span>
+</div>
+<span class="w-5 h-5 rounded-full bg-surface-container-high"></span>
+</div>
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface leading-snug">Cuci Kering Lipat</h4>
+<span class="text-label-sm font-label-sm text-outline">Tanpa Setrika</span>
+<div class="mt-2 pt-2 bg-surface-container-low rounded-lg px-2 py-1 flex items-baseline justify-between">
+<span class="text-label-sm font-label-sm text-on-surface">Rp 6.000</span>
+<span class="text-[11px] text-outline">/kg</span>
+</div>
+</div>
+</div>
+<!-- Option 3: Setrika Saja (Steam) -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl flex flex-col justify-between shadow-[0_2px_12px_rgba(15,23,42,0.03)] hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-start justify-between mb-2">
+<div class="w-9 h-9 rounded-xl bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">iron</span>
+</div>
+<span class="w-5 h-5 rounded-full bg-surface-container-high"></span>
+</div>
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface leading-snug">Setrika Steam</h4>
+<span class="text-label-sm font-label-sm text-outline">Uap Anti Kusut</span>
+<div class="mt-2 pt-2 bg-surface-container-low rounded-lg px-2 py-1 flex items-baseline justify-between">
+<span class="text-label-sm font-label-sm text-on-surface">Rp 5.000</span>
+<span class="text-[11px] text-outline">/kg</span>
+</div>
+</div>
+</div>
+<!-- Option 4: Satuan & Jas Premium -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl flex flex-col justify-between shadow-[0_2px_12px_rgba(15,23,42,0.03)] hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-start justify-between mb-2">
+<div class="w-9 h-9 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">styler</span>
+</div>
+<span class="w-5 h-5 rounded-full bg-surface-container-high"></span>
+</div>
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface leading-snug">Jas &amp; Premium</h4>
+<span class="text-label-sm font-label-sm text-secondary">Dry Clean Per Pc</span>
+<div class="mt-2 pt-2 bg-surface-container-low rounded-lg px-2 py-1 flex items-baseline justify-between">
+<span class="text-label-sm font-label-sm text-on-surface">Rp 25.000</span>
+<span class="text-[11px] text-outline">/pcs</span>
+</div>
+</div>
+</div>
+<!-- Option 5: Bed Cover & Selimut -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl flex flex-col justify-between shadow-[0_2px_12px_rgba(15,23,42,0.03)] hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-start justify-between mb-2">
+<div class="w-9 h-9 rounded-xl bg-surface-container-high text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">bed</span>
+</div>
+<span class="w-5 h-5 rounded-full bg-surface-container-high"></span>
+</div>
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface leading-snug">Bed Cover Jumbo</h4>
+<span class="text-label-sm font-label-sm text-outline">Selimut &amp; Sprei</span>
+<div class="mt-2 pt-2 bg-surface-container-low rounded-lg px-2 py-1 flex items-baseline justify-between">
+<span class="text-label-sm font-label-sm text-on-surface">Rp 35.000</span>
+<span class="text-[11px] text-outline">/pcs</span>
+</div>
+</div>
+</div>
+<!-- Option 6: Sepatu & Tas Deep Clean -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl flex flex-col justify-between shadow-[0_2px_12px_rgba(15,23,42,0.03)] hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-start justify-between mb-2">
+<div class="w-9 h-9 rounded-xl bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">footprint</span>
+</div>
+<span class="w-5 h-5 rounded-full bg-surface-container-high"></span>
+</div>
+<div>
+<h4 class="text-label-lg font-label-lg text-on-surface leading-snug">Sepatu &amp; Tas</h4>
+<span class="text-label-sm font-label-sm text-outline">Deep Cleaning</span>
+<div class="mt-2 pt-2 bg-surface-container-low rounded-lg px-2 py-1 flex items-baseline justify-between">
+<span class="text-label-sm font-label-sm text-on-surface">Rp 45.000</span>
+<span class="text-[11px] text-outline">/pasang</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 3: Digital Weight Scale Widget & Detail Pengerjaan -->
+<div class="px-margin mb-space-lg flex flex-col gap-space-md">
+<!-- Digital Scale Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-[0_4px_24px_-4px_rgba(15,23,42,0.05)]">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container animate-pulse"></span>
+<span class="text-label-md font-label-md text-on-surface">Timbangan Digital POS (Bluetooth Terhubung)</span>
+</div>
+<button aria-label="Kalibrasi Timbangan" class="text-primary hover:text-primary-container text-label-sm font-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px]">scale</span>
+<span>Tara/Nol</span>
+</button>
+</div>
+<!-- Scale Display & Interactive Stepper -->
+<div class="bg-surface-container-low rounded-xl p-4 flex items-center justify-between">
+<button aria-label="Kurangi Berat" class="w-12 h-12 rounded-full bg-surface-container-lowest text-on-surface hover:bg-surface-variant flex items-center justify-center shadow-sm active:scale-95 transition-transform" id="btn-minus">
+<span class="material-symbols-outlined text-[24px]">remove</span>
+</button>
+<div class="flex flex-col items-center">
+<div class="flex items-baseline gap-1">
+<span class="text-headline-xl-mobile font-headline-xl-mobile text-on-surface tracking-tight" id="weight-display">4.8</span>
+<span class="text-headline-md font-headline-md text-primary">Kg</span>
+</div>
+<span class="text-label-sm font-label-sm text-outline">Kapasitas Maks Mesin: 7.0 Kg</span>
+</div>
+<button aria-label="Tambah Berat" class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container hover:bg-primary flex items-center justify-center shadow-md active:scale-95 transition-transform" id="btn-plus">
+<span class="material-symbols-outlined text-[24px]">add</span>
+</button>
+</div>
+<!-- Quick Preset Weight Buttons -->
+<div class="flex items-center justify-between gap-2 mt-3">
+<button class="weight-preset flex-1 py-1.5 rounded-lg bg-surface-container text-body-sm font-body-sm text-on-surface hover:bg-primary-fixed hover:text-primary transition-colors text-center" data-weight="3.0">3.0 kg</button>
+<button class="weight-preset flex-1 py-1.5 rounded-lg bg-surface-container text-body-sm font-body-sm text-on-surface hover:bg-primary-fixed hover:text-primary transition-colors text-center" data-weight="4.8">4.8 kg</button>
+<button class="weight-preset flex-1 py-1.5 rounded-lg bg-surface-container text-body-sm font-body-sm text-on-surface hover:bg-primary-fixed hover:text-primary transition-colors text-center" data-weight="6.5">6.5 kg</button>
+<button class="weight-preset flex-1 py-1.5 rounded-lg bg-surface-container text-body-sm font-body-sm text-on-surface hover:bg-primary-fixed hover:text-primary transition-colors text-center" data-weight="8.0">8.0 kg</button>
+</div>
+</div>
+<!-- Pilihan Durasi & Kecepatan Layanan -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,23,42,0.04)]">
+<label class="text-label-lg font-label-lg text-on-surface block mb-2.5 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+        Kecepatan Pengerjaan
+      </label>
+<div class="flex flex-col gap-2">
+<!-- Durasi 1: Reguler -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3">
+<input class="w-4 h-4 text-primary accent-primary" name="speed" type="radio" value="0"/>
+<div>
+<p class="text-label-md font-label-md text-on-surface">Reguler (Standar 2 Hari)</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Selesai Kamis, 17:00 WIB</p>
+</div>
+</div>
+<span class="text-label-sm font-label-sm text-outline">Tanpa Biaya Tambahan</span>
+</label>
+<!-- Durasi 2: Kilat (Checked) -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-primary-fixed/30 ring-1 ring-primary/40 cursor-pointer">
+<div class="flex items-center gap-3">
+<input checked="" class="w-4 h-4 text-primary accent-primary" name="speed" type="radio" value="5000"/>
+<div>
+<div class="flex items-center gap-1.5">
+<p class="text-label-md font-label-md text-primary font-bold">Kilat (1 Hari Selesai)</p>
+<span class="px-1.5 py-0.5 bg-secondary-container text-on-primary rounded text-[10px] font-bold">Populer</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Selesai Besok Siang, 12:00 WIB</p>
+</div>
+</div>
+<span class="text-label-md font-label-md text-primary font-bold">+Rp 5.000</span>
+</label>
+<!-- Durasi 3: Express 3 Jam -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3">
+<input class="w-4 h-4 text-primary accent-primary" name="speed" type="radio" value="15000"/>
+<div>
+<p class="text-label-md font-label-md text-on-surface">Express Super (3 Jam)</p>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Prioritas Washer Mesin #02</p>
+</div>
+</div>
+<span class="text-label-md font-label-md text-secondary font-bold">+Rp 15.000</span>
+</label>
+</div>
+</div>
+<!-- Pilihan Pewangi/Parfum Aroma (Capsule Carousel) -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,23,42,0.04)]">
+<div class="flex items-center justify-between mb-2.5">
+<label class="text-label-lg font-label-lg text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">air</span>
+          Pilihan Aroma Pewangi
+        </label>
+<span class="text-label-sm font-label-sm text-tertiary">Gratis Tambahan</span>
+</div>
+<div class="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1">
+<!-- Pewangi 1: Ocean Fresh (Selected) -->
+<button aria-pressed="true" class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-primary text-on-primary text-label-md font-label-md flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">waves</span>
+<span>Ocean Fresh (Default)</span>
+</button>
+<!-- Pewangi 2: Lavender Blossom -->
+<button aria-pressed="false" class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface text-label-md font-label-md flex-shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[16px]">spa</span>
+<span>Lavender Blossom</span>
+</button>
+<!-- Pewangi 3: Baby Soft -->
+<button aria-pressed="false" class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface text-label-md font-label-md flex-shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[16px]">child_care</span>
+<span>Baby Soft</span>
+</button>
+<!-- Pewangi 4: Sweet Vanilla -->
+<button aria-pressed="false" class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface text-label-md font-label-md flex-shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[16px]">cake</span>
+<span>Sweet Vanilla</span>
+</button>
+</div>
+</div>
+<!-- Catatan Khusus Pengerjaan -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-[0_4px_20px_-2px_rgba(15,23,42,0.04)]">
+<label class="text-label-lg font-label-lg text-on-surface block mb-2 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">edit_note</span>
+        Catatan &amp; Instruksi Khusus Kasir
+      </label>
+<textarea class="w-full bg-surface-container-low rounded-xl p-3 text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container transition-colors resize-none" placeholder="Tulis instruksi khusus operator cuci..." rows="2">Kemeja putih tolong pisahkan dengan pakaian warna gelap</textarea>
+<!-- Quick Note Tags -->
+<div class="flex flex-wrap gap-1.5 mt-2">
+<span class="px-2 py-1 rounded-md bg-surface-container text-[11px] font-label-sm text-on-surface-variant cursor-pointer hover:bg-surface-container-high">+ Pisah Warna Putih</span>
+<span class="px-2 py-1 rounded-md bg-surface-container text-[11px] font-label-sm text-on-surface-variant cursor-pointer hover:bg-surface-container-high">+ Jangan Kena Air Panas</span>
+<span class="px-2 py-1 rounded-md bg-surface-container text-[11px] font-label-sm text-on-surface-variant cursor-pointer hover:bg-surface-container-high">+ Lipat Hanger</span>
+</div>
+</div>
+</div>
+<!-- Bottom Floating POS Calculation & Checkout Summary -->
+<div class="px-margin mt-1">
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-[0_8px_32px_rgba(15,23,42,0.08)] flex flex-col gap-3">
+<!-- Breakdown Details Accordion/Summary -->
+<div class="flex flex-col gap-1.5 pb-3 border-b-0">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Layanan Utama (4.8 kg × Rp 8.000)</span>
+<span class="text-on-surface font-medium">Rp 38.400</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Kecepatan Kilat (1 Hari)</span>
+<span class="text-on-surface font-medium">Rp 5.000</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Parfum Ocean Fresh</span>
+<span class="text-tertiary font-medium">Gratis</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Diskon Member Gold (10%)</span>
+<span class="text-tertiary-container font-semibold">-Rp 4.340</span>
+</div>
+</div>
+<!-- Total Price Bar -->
+<div class="bg-surface-container-low p-3 rounded-xl flex items-center justify-between">
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider block">Total Tagihan POS</span>
+<div class="flex items-baseline gap-1">
+<span class="text-headline-md font-headline-md text-primary">Rp 39.060</span>
+<span class="text-body-sm font-body-sm text-outline line-through">Rp 43.400</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-tertiary font-label-sm text-label-sm bg-tertiary-fixed/60 px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-[14px]">savings</span>
+<span>Hemat Rp 4.340</span>
+</div>
+</div>
+<!-- Action Buttons Pair -->
+<div class="grid grid-cols-5 gap-space-sm pt-1">
+<button aria-label="Simpan Draft Pesanan" class="col-span-2 py-3 px-3 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-variant text-label-md font-label-md flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+<span>Simpan Draf</span>
+</button>
+<button aria-label="Lanjut Pembayaran dan Cetak Nota" class="col-span-3 py-3 px-4 rounded-full bg-primary-container text-on-primary-container hover:bg-primary shadow-[0_8px_20px_-4px_rgba(37,99,235,0.4)] text-label-lg font-label-lg flex items-center justify-center gap-1.5 active:scale-[0.98] transition-all" type="button">
+<span>Bayar &amp; Cetak Nota</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive logic for Weight Scale adjustment
+  (function initPosWeightCalculator() {
+    let currentWeight = 4.8;
+    const weightEl = document.getElementById('weight-display');
+    const btnMinus = document.getElementById('btn-minus');
+    const btnPlus = document.getElementById('btn-plus');
+    const presets = document.querySelectorAll('.weight-preset');
+
+    function updateWeight(newVal) {
+      currentWeight = Math.max(0.5, Math.min(25.0, Math.round(newVal * 10) / 10));
+      if (weightEl) {
+        weightEl.textContent = currentWeight.toFixed(1);
+      }
+    }
+
+    if (btnMinus) {
+      btnMinus.addEventListener('click', function() {
+        updateWeight(currentWeight - 0.2);
+      });
+    }
+
+    if (btnPlus) {
+      btnPlus.addEventListener('click', function() {
+        updateWeight(currentWeight + 0.2);
+      });
+    }
+
+    presets.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const val = parseFloat(this.getAttribute('data-weight'));
+        if (!isNaN(val)) {
+          updateWeight(val);
+        }
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(15,23,42,0.05)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="text-label-sm font-label-sm mt-0.5 truncate">Dashboard</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="pesanan" href="#"><span class="material-symbols-outlined text-[22px]">local_laundry_service</span><span class="text-label-sm font-label-sm mt-0.5 truncate">Pesanan</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 transition-colors group text-primary font-bold" data-path="pos-baru" href="#"><div class="w-10 h-10 -mt-5 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-[0_8px_16px_-4px_rgba(37,99,235,0.4)] group-hover:bg-primary transition-all"><span class="material-symbols-outlined text-[22px]">point_of_sale</span></div><span class="text-label-sm font-label-sm mt-1 truncate">POS Baru</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="mesin-operasional" href="#"><span class="material-symbols-outlined text-[22px]">precision_manufacturing</span><span class="text-label-sm font-label-sm mt-0.5 truncate">Mesin</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="pelanggan-katalog" href="#"><span class="material-symbols-outlined text-[22px]">group</span><span class="text-label-sm font-label-sm mt-0.5 truncate">Katalog</span></a></div></nav></body></html>
